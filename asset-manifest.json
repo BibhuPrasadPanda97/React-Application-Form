@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/React-Application-Form/static/css/main.4a1ece9d.css",
+    "main.js": "/React-Application-Form/static/js/main.948f20ca.js",
+    "static/js/787.42b157f3.chunk.js": "/React-Application-Form/static/js/787.42b157f3.chunk.js",
+    "static/media/spinnerLoading.gif": "/React-Application-Form/static/media/spinnerLoading.42ef9531b7271474d02f.gif",
+    "index.html": "/React-Application-Form/index.html",
+    "static/media/down-arrow-of-angle-svgrepo-com.svg": "/React-Application-Form/static/media/down-arrow-of-angle-svgrepo-com.b5e0f77ff31049816938.svg",
+    "main.4a1ece9d.css.map": "/React-Application-Form/static/css/main.4a1ece9d.css.map",
+    "main.948f20ca.js.map": "/React-Application-Form/static/js/main.948f20ca.js.map",
+    "787.42b157f3.chunk.js.map": "/React-Application-Form/static/js/787.42b157f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a1ece9d.css",
+    "static/js/main.948f20ca.js"
+  ]
+}
