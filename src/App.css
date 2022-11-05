@@ -1,3 +1,11 @@
+body {
+  background-color: #dce3e8;
+}
+
+.form-control, .btn{
+  border-radius: 0px;
+}
+
 .App {
   text-align: center;
 }
