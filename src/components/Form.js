@@ -67,7 +67,7 @@ export default function Form() {
           <div className="row my-3">
             <div className="col-lg-6 col-md-6 col-sm-6">
               <label htmlFor="gender" className='mb-2'>Gender:</label>
-              <select name="gender" id="gender" className="form-control" value={data.gender} onChange={handleChange} >
+              <select name="gender" id="gender" className="form-select" value={data.gender} onChange={handleChange} >
                 <option select="true" value>-- select an option --</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>

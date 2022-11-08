@@ -3,13 +3,14 @@
   transform: translateY(4px);
 }
 
-select {
+/* Drop down arrow manually */
+/* select {
   background: url("./images/down-arrow-of-angle-svgrepo-com.svg");
   background-repeat: no-repeat;
   background-size: 2%;
   background-position-y: center;
   background-position-x: 98%;
-}
+} */
 
 @media screen and (max-width: 600px){
   .sm-my-3{

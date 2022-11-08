@@ -2,7 +2,7 @@ body {
   background-color: #dce3e8;
 }
 
-.form-control, .btn{
+.form-control, .btn, .form-select{
   border-radius: 0px;
 }
 
