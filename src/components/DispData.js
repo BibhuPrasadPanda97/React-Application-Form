@@ -1,8 +1,7 @@
 import React from 'react';
-import Employee from './employee';
 
-
-function DispData() {
+function DispData({ employee, deleteItem }) {
+  // console.log("Employee:",employee)
 
   return (
     <div className='my-5'>
@@ -12,23 +11,25 @@ function DispData() {
             <th>Name</th>
             <th>Age</th>
             <th>Gender</th>
+            <th></th>
           </tr>
         </thead>
-        <tbody>
+        {employee.length > 0 ? <tbody>
           {
-            Employee && Employee.length > 0
+            employee && employee.length > 0
               ?
-              Employee.map((row) => {
+              employee.map((row) => {
                 return <tr key={row.id}>
                   <td>{row.name}</td>
                   <td>{row.age}</td>
                   <td>{row.gender}</td>
+                  <td><button className='btn-trash' onClick={() => deleteItem(row)} ><i className="fa-solid fa-trash"></i></button></td>
                 </tr>
               })
               :
-              "No Data available"
+              ""
           }
-        </tbody>
+        </tbody> : ""}
       </table>
     </div>
   )

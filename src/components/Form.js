@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
 import '../App.css'
-import { v4 as uuidv4 } from 'uuid'
 import './Form_styles.css'
 import Spinner from './spinner/Spinner';
-import Employee from './employee';
 
 
-export default function Form() {
+export default function Form(props) {
 
   const [loadSpinner, setLoadSpinner] = useState(false);
   const [data, setData] = useState({
-    id: uuidv4().slice(0, 8),
     name: '',
     age: '',
     gender: ''
@@ -28,18 +25,21 @@ export default function Form() {
 
   const handleSubmit = (event) => {
     setLoadSpinner(true);
-    let formdata = data;
-
+    let formdata = {
+      name: event.target.name.value,
+      age: event.target.age.value,
+      gender: event.target.gender.value
+    }
+    
     setTimeout(() => {
       setLoadSpinner(false);
-      Employee.push(formdata);
-      console.log("Employee:", Employee);
+      // Employee.push(formdata);
+      props.sendEmpData(formdata);
     }, 2000);
     event.preventDefault();
 
     // clear Data
     setData({
-      id: '',
       name: '',
       age: '',
       gender: ''
