@@ -18,12 +18,12 @@ function DispData({ employee, deleteItem }) {
           {
             employee && employee.length > 0
               ?
-              employee.map((row) => {
-                return <tr key={row.id}>
-                  <td>{row.name}</td>
-                  <td>{row.age}</td>
-                  <td>{row.gender}</td>
-                  <td><button className='btn-trash' onClick={() => deleteItem(row)} ><i className="fa-solid fa-trash"></i></button></td>
+              employee.map((item) => {
+                return <tr key={item.id}>
+                  <td>{item.name}</td>
+                  <td>{item.age}</td>
+                  <td>{item.gender}</td>
+                  <td><button className='btn-trash' onClick={() => deleteItem(item)} ><i className="fa-solid fa-trash"></i></button></td>
                 </tr>
               })
               :
